@@ -1,0 +1,13 @@
+[Unit]
+Description=restake bot
+After=multi-user.target
+
+[Service]
+Type=simple
+Restart=always
+WorkingDirectory=/home/restakebot
+ExecStart=/usr/bin/python3 -u /home/restakebot/restakebot.py
+
+[Install]
+WantedBy=multi-user.target
+
